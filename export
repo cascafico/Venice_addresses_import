@@ -1,0 +1,11 @@
+ {
+      "id"  : {{(cells["id"].value)}},
+      "lat" : {{(cells["lat"].value)}},
+      "lon" : {{(cells["lon"].value)}},
+      "tags" : {
+               "addr:street" : {{jsonize(cells["addr:street"].value)}},
+               "addr:housenumber" : {{jsonize(cells["addr:housenumber"].value)}},
+               "addr:postcode" : {{jsonize(cells["addr:postcode"].value)}},
+               "addr:city" : "Milano"
+               }
+    }
