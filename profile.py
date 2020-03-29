@@ -20,13 +20,16 @@ overpass_timeout = 300
 #query = [('addr:housenumber','.*')] 
 #query = [('addr:housenumber','~.*')]  e se lettera e interno non hanno stesso case?
 #query = [('addr:street','~.*'),('addr:city','Milano')] non tutti hanno city valorizzato
-query = [('addr:street','~.*')] 
+
+query = [('addr:housenumber','~.*')] 
+# do not comment: seems needed even if external --osm data
 
 # alternatively, parameter --osm export.osm will use indipendently generated queries, ie:
 # http://overpass-turbo.eu/s/S17
 # use wget -O manual-query.osm <http_addr obtained exporting compact query>
 
 bbox = True
+max_request_boxes = 32
 
 
 # tags to replace on matched OSM objects

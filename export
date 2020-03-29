@@ -1,11 +1,12 @@
- {
+{
       "id"  : {{(cells["id"].value)}},
-      "lat" : {{(cells["lat"].value)}},
-      "lon" : {{(cells["lon"].value)}},
+      "lat" : {{(cells["LAT_WGS84"].value)}},
+      "lon" : {{(cells["LONG_WGS84"].value)}},
       "tags" : {
                "addr:street" : {{jsonize(cells["addr:street"].value)}},
-               "addr:housenumber" : {{jsonize(cells["addr:housenumber"].value)}},
-               "addr:postcode" : {{jsonize(cells["addr:postcode"].value)}},
+               "addr:housenumber" : {{jsonize(cells["NUMEROCOMPLETO"].value)}},
+               "addr:postcode" : {{jsonize(cells["CAP"].value)}},
                "addr:city" : "Milano"
                }
-    }
+} 
+
