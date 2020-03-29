@@ -30,7 +30,8 @@ bbox = True
 
 
 # tags to replace on matched OSM objects
-master_tags = ('addr:housenumber', 'addr:street')
+# master_tags = ('addr:housenumber', 'addr:street')
+master_tags = ('addr:street')
 
 # delete_unmatched = True cancellerebbe anche i POI con indirizzo
 delete_unmatched = False
@@ -39,7 +40,7 @@ tag_unmatched = { 'fixme':'this addr is suppressed from ds634-20200320 dataset o
 
 # max distance to search for a match in meters (default 100)
 # max_distance = 10 several housenumbers in polygon centriod unmatched... wider distance
-max_distance = 20
+max_distance = 10
 
 # max distance to consider dataset duplicates
 duplicate_distance = 2
