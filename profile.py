@@ -33,12 +33,12 @@ max_request_boxes = 32
 
 
 # tags to replace on matched OSM objects
-# master_tags = ('addr:housenumber', 'addr:street')
-master_tags = ('addr:street')
+master_tags = ('addr:housenumber', 'addr:street')
+#master_tags = ('addr:street')
 
 # delete_unmatched = True cancellerebbe anche i POI con indirizzo
 delete_unmatched = False
-tag_unmatched = { 'fixme':'this addr is suppressed from ds634-20200320 dataset or in wrong position: please check in range +10 meters' }
+tag_unmatched = { 'fixme':'Maybe addr is plate in wrong position: please check' }
 
 
 # max distance to search for a match in meters (default 100)
