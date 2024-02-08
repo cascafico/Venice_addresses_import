@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -i -e '/"addr:postcode" : "",/d'  -e '/"addr:postcode" : null/d' $1      
+sed -i -e '/"addr:place" : "",/d'  -e '/"addr:place" : null/d' $1      
