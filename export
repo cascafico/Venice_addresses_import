@@ -1,12 +1,12 @@
 {
       "id"  : {{(cells["id"].value)}},
-      "lat" : {{(cells["LAT_WGS84"].value)}},
-      "lon" : {{(cells["LONG_WGS84"].value)}},
+      "lat" : {{(cells["lat"].value)}},
+      "lon" : {{(cells["lon"].value)}},
       "tags" : {
-               "addr:street" : {{jsonize(cells["addr:street"].value)}},
-               "addr:housenumber" : {{jsonize(cells["NUMEROCOMPLETO"].value)}},
-               "addr:postcode" : {{jsonize(cells["CAP"].value)}},
-               "addr:city" : "Milano"
+               "addr:street" : {{jsonize(cells["street"].value)}},
+               "addr:place" : {{jsonize(cells["place"].value)}},
+               "addr:housenumber" : {{jsonize(cells["housenumber"].value)}},
+               "addr:city" : "Venezia"
                }
 } 
 
