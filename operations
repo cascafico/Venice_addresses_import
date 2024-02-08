@@ -373,5 +373,31 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column place using expression grel:value.replace(\"S.M. \",\"Santa Maria \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "place",
+    "expression": "grel:value\n.replace(\"o'\",\"ò\")\n.replace(\"e'\",\"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column place using expression grel:value\n.replace(\"o'\",\"ò\")\n.replace(\"e'\",\"è\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value\n.replace(\"o'\",\"ò\")\n.replace(\"e'\",\"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value\n.replace(\"o'\",\"ò\")\n.replace(\"e'\",\"è\")"
   }
 ]
