@@ -5,8 +5,8 @@
       "tags" : {
                "addr:street" : {{jsonize(cells["street"].value)}},
                "addr:place" : {{jsonize(cells["place"].value)}},
-               "addr:housenumber" : {{jsonize(cells["housenumber"].value)}},
-               "addr:city" : "Venezia"
+               "addr:housenumber" : {{jsonize(cells["housenumber"].value)}}
+               
                }
 } 
 
